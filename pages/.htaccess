@@ -1,0 +1,6 @@
+RewriteEngine on 
+
+Options +MultiViews 
+RewriteRule ^([0-9]+)$ profile.php?c=$1 [L]
+
+RewriteRule ^([a-z]+)$ login.php [L]

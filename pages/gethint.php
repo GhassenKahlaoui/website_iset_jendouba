@@ -1,0 +1,56 @@
+<?php
+// Array with names
+$a[] = "Departement Technologie de l'informatique";
+$a[] = "info";
+$a[] = "electrique";
+$a[] = "Mecanique";
+$a[] = "genie electrique ";
+$a[] = "genie Mecanique";
+$a[] = "documents";
+$a[] = "Departement Genie Electrique";
+$a[] = "Departement Genie Mecanique";
+$a[] = "Departement Science Econique et gestion ";
+$a[] = "Espace Etudiant";
+$a[] = "Espace Enseignant";
+$a[] = "Nina";
+$a[] = "Ophelia";
+$a[] = "Petunia";
+$a[] = "Amanda";
+$a[] = "Raquel";
+$a[] = "Cindy";
+$a[] = "Doris";
+$a[] = "Eve";
+$a[] = "Evita";
+$a[] = "Sunniva";
+$a[] = "Tove";
+$a[] = "Unni";
+$a[] = "Violet";
+$a[] = "Liza";
+$a[] = "Elizabeth";
+$a[] = "Ellen";
+$a[] = "Wenche";
+$a[] = "Vicky";
+
+// get the q parameter from URL
+$q = $_REQUEST["q"];
+
+$hint = "";
+
+// lookup all hints from array if $q is different from "" 
+if ($q !== "") {
+    $q = strtolower($q);
+    $len=strlen($q);
+    foreach($a as $name) {
+        if (stristr($q, substr($name, 0, $len))) {
+            if ($hint === "") {
+                $hint = $name;
+            } else {
+                $hint .= ", $name";
+            }
+        }
+    }
+}
+
+// Output "no suggestion" if no hint was found or output correct values 
+echo $hint === "" ? "no suggestion" : $hint;
+?> 
