@@ -1,0 +1,39 @@
+.info_personnel {
+  background-color: #718093;
+  box-shadow: inset 50px 40px 30px 30px #f5f6fa , inset -50px -40px 20px 30px #9c88ff;
+}
+.info_personnel>img {
+margin-left:350px;
+
+width: 200px;
+height: 200px; 
+border-radius: 100px;
+}
+div {
+  flex-direction: row;
+  display: inline-flex;
+  outline : 2px solid silver;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+p:hover {
+  color: pink;
+  background-color: #273c75;
+}
+
+p {
+
+  flex: 1 auto ;
+  margin : 1em;
+  font-family: sans-serif; 
+  color: white ; 
+  background-color: tomato ; 
+  font-weight: bold ;
+  text-align: center;
+  padding: 1em;
+  cursor: pointer ; 
+}
+body {
+  background-color: #192a56;
+}

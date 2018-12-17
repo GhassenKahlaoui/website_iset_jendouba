@@ -1,0 +1,32 @@
+body {
+    background-color:cadetblue;
+}
+
+header {
+    margin-top: 200px;
+    margin-left: 400px;
+    background-color: antiquewhite;
+    width: 250px; 
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 20px;
+    position : fixed ; 
+}
+.panel {
+
+    margin-top:400px;
+    text-align: center;
+    width: 1080;
+    position: fixed;
+}
+.alert {
+border:none;
+box-shadow: 20px 20px 30px slateblue;
+   margin-top: 80px;
+}
+input[type='text'] {
+    border : none;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+}
